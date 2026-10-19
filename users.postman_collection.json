@@ -1,0 +1,40 @@
+{
+  "info": {
+    "name": "Users API",
+    "description": "Requests for working with users",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get all users",
+      "request": {
+        "method": "GET",
+        "url": "https://jsonplaceholder.typicode.com/users"
+      }
+    },
+    {
+      "name": "Get user by ID",
+      "request": {
+        "method": "GET",
+        "url": "https://jsonplaceholder.typicode.com/users/1"
+      }
+    },
+    {
+      "name": "Create user",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Alex Smith\",\n  \"username\": \"alexsmith\",\n  \"email\": \"alex@example.com\"\n}"
+        },
+        "url": "https://jsonplaceholder.typicode.com/users"
+      }
+    }
+  ]
+}
